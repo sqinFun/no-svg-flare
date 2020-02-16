@@ -1,0 +1,62 @@
+@font-face {
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.center-wrap {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+}
+
+@keyframes flare {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.box-with-text {
+    background: url("gradient.svg") #fff;
+    color: #fff;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(45deg, rgba(255,255,255,1) 40%, rgba(196,196,196,1) 50%, rgba(255,255,255,1) 60%); */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+}
+   
+  .box-with-text {
+    overflow: hidden;
+    /* background-position: 50% 50%; */
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 50px;
+    animation: flare 3s alternate infinite linear;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .box-with-text {
+        background: none;
+    }
+ }
